@@ -1,3 +1,4 @@
+ifeq (msm8994,$(QCOM_HARDWARE_VARIANT))
 QCOM_MEDIA_ROOT := $(call my-dir)
 
 #Compile these for all targets under QCOM_BOARD_PLATFORMS list.
@@ -13,4 +14,5 @@ ifeq ($(BOARD_USES_ADRENO), true)
 include $(QCOM_MEDIA_ROOT)/libc2dcolorconvert/Android.mk
 endif
 
+endif
 endif
